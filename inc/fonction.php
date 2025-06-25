@@ -21,5 +21,12 @@
         }
         return $val;
     }
+    function ficheEmployee($emp_no){
+        include('base.php');
+        $sql = "SELECT * FROM employees WHERE emp_no = '$emp_no'";
+        $query = mysqli_query($bdd, $sql);
+        $val = mysqli_fetch_assoc($query);
+        return $val;
+    }
     
 ?>

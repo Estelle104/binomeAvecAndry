@@ -3,6 +3,7 @@ include('../inc/fonction.php');
 $getdepartement = getDepartements();
 $getmanager = getManagerLoading();
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
