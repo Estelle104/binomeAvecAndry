@@ -59,7 +59,7 @@ $val = getEmployees($dept_no);
     <?php include('header.php'); ?>
     <main>
         <?php for ($i = 0; $i < count($val); $i++) { ?>
-            <a href="ficheEmployee.php?emp_no=<?= $val[$i]['emp_no'] ?>"><p><?php echo $val[$i]['first_name']; ?> <?php echo $val[$i]['first_name']; ?> </p></a>
+            <a href="ficheEmployee.php?emp_no=<?= $val[$i]['emp_no'] ?>"><p><?php echo $val[$i]['first_name']; ?> <?php echo $val[$i]['emp_no']; ?> </p></a>
         <?php } ?>
     </main>
 </body>
